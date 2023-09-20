@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.header{
+  background-color: rgb(36, 35, 35);
+  
+  color:"white";
+  font-size:"32px";
+}
+
+.headertab{
+  background-color: grey;
+  
+}
