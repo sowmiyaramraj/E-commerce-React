@@ -1,16 +1,24 @@
 .Signup{
     display: flex;
-    flex-direction: column;
-   
+    flex-direction: column;   
     margin: auto;
-    margin-top: 200 px;
-    padding-bottom: 30 px;
+    padding-bottom: 30px;
+    background-image: linear-gradient(rgb(200, 115, 240), rgb(118, 120, 245));
+    /* align-items: center; */
+}
+
+.Signin{
+    display: flex;
+    flex-direction: column;   
+    margin: auto;   
+    padding-bottom: 30px;
     background-image: linear-gradient(rgb(200, 115, 240), rgb(118, 120, 245));
     /* align-items: center; */
 }
 .text{
     color:#3c009d;
-    font-size: 48 px;
+    padding: 40px;
+    font-size: 48px;
     font-weight: 700;
     text-align: center;
     align-content: center;
@@ -25,19 +33,32 @@
     background: #eaeaea;
     border-radius: 6px;
 }
-
-.card1{
+.card{
+    padding: right;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 9 px;
+    gap: 9px;
     margin-left: 300px;
     width: 100%;
     margin-top: 30px;
     margin-bottom: 30px;
     background-color: white;
     width: 350px;
-    height: 400px;
+    height: fit-content;
+}
+.card1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    margin-left: 300px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    width: 350px;
+    height: fit-content;
 
 }
 .submit{
@@ -46,4 +67,5 @@
     height: fit-content;
     color: #eaeaea;
     align-items: center;
+    
 }

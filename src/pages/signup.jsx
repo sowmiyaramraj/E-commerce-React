@@ -2,7 +2,7 @@ import React,{useState,useEffect} from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Card from '@mui/material/Card';
-import { AlignCenterVertical } from "phosphor-react";
+import { AlignCenterVertical, SignIn } from "phosphor-react";
 import "./pages.css";
 export default function Signup(){
     const navigate=useNavigate();
@@ -64,6 +64,7 @@ export default function Signup(){
                 <button className="submit" type="submit">Submit</button>
                 </div>
             </form>
+           <h5> Have a Account <span><a href={<SignIn/>}>Signin</a></span></h5>
             </Card>
            
            
