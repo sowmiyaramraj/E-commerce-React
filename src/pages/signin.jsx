@@ -4,6 +4,8 @@ import {useNavigate} from "react-router-dom";
 import Card from "@mui/material/Card";
 import "./pages.css"
 import Signup from "./signup";
+import {Link} from "react-router-dom";
+
 export default function Signin(){
     const navigate=useNavigate();
     const [formdata,setFormdata]=useState({
@@ -36,7 +38,7 @@ export default function Signin(){
             
             </form>
             <h5>Don't have account <span>
-                <a href={<Signup/>}>Signup</a> </span></h5>
+            <Link to="/signup">Signup</Link></span></h5>
             </Card>
         </div>
     );
