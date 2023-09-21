@@ -1,5 +1,5 @@
 import React from "react";
-import Products from "../components/products";
+import {Products} from "../components/products";
 import {Product} from "./product";
 import Register from "./register";
 export const Shop=()=>{
@@ -11,7 +11,7 @@ export const Shop=()=>{
             </div>
             <div>
                 {" "}
-                {Products.products.map((product)=>(
+                {Products.map((product)=>(
                     <Product key={product.productId} data={product}/>
                      
                 ))}

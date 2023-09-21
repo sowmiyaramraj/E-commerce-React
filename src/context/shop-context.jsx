@@ -1,10 +1,10 @@
 import React, {createContext, useContext, useState} from "react";
-import Products from "../components/products";
+import {Products }from "../components/products";
 export const ShopContext=createContext(null);
 
 const getDefaultCart=()=>{
     let cart={};
-    for(let i=1;i<=Products.products.length;i++){
+    for(let i=1;i<=Products.length;i++){
         cart[i]=0;   
     }    
     return cart;
@@ -12,7 +12,7 @@ const getDefaultCart=()=>{
 
 const getDefaultwishlistItem=()=>{
     let wishlist={};
-    for(let i=1;i<=Products.products.length;i++){
+    for(let i=1;i<=Products.length;i++){
         wishlist[i]=0;   
     }    
     return wishlist;

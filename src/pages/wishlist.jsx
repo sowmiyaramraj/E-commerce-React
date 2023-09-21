@@ -1,5 +1,5 @@
 import React,{useContext} from "react";
-import Products from "../components/products";
+import {Products} from "../components/products";
 import { ShopContext } from "../context/shop-context";
 import { Wishlistitem } from "./wishlistitem";
 export const Wishlist=()=>{
@@ -7,7 +7,7 @@ export const Wishlist=()=>{
    
     return(
         <div>
-           {Products.products.map((product=>{
+           {Products.map((product=>{
             console.log(product.productId);
             
             if(wishlistItem[product.productId] === 1){
