@@ -45,8 +45,19 @@ export const ShopContextProvider=(props)=>{
 
           }
     console.log(wishlistItem);
+    const gettotalcartamount=()=>{
+      let totalamount=0;
+      for(const item in cartItem){
+        if(cartItem[item]>0){
+          let itemInfo= Products.find((product)=>product.productId===Number(item));
+          totalamount += cartItem[item] * itemInfo.productPrice;
+        }
+      }
+      return totalamount; 
 
-    const contextvalue={wishlistItem,cartItem,addtocart,removefromcart,updatecartitemcount,addtowishlist};
+    }
+
+    const contextvalue={wishlistItem,gettotalcartamount,cartItem,addtocart,removefromcart,updatecartitemcount,addtowishlist};
    
     return <ShopContext.Provider value={contextvalue}>
         {props.children}</ShopContext.Provider>
